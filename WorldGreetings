@@ -1,0 +1,19 @@
+import time
+t=time.time()
+
+
+t=t/3600
+# In hours
+
+
+t=t%24
+# In this Day
+t=round(t)
+# To nearest hour
+if t<12:
+    print("Good Morning World")
+elif t<18:
+    print('Good Afternoon World')
+else:
+    print('Good Evening World')
+
