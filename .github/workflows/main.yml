@@ -26,6 +26,7 @@ jobs:
         # ls -al 
         # source .venv/bin/activate
         # echo "pip install -r requirements.txt --break-system-packages"
+        pip -V
         pip install -r requirements.txt --break-system-packages
         # pip install -r requirements.txt
         echo "pip show"
