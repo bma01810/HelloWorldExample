@@ -26,8 +26,8 @@ jobs:
         # ls -al 
         # source .venv/bin/activate
         # echo "pip install -r requirements.txt --break-system-packages"
-        # pip install -r requirements.txt --break-system-packages
-        pip install -r requirements.txt
+        pip install -r requirements.txt --break-system-packages
+        # pip install -r requirements.txt
         echo "pip show"
         pip show exp10it
         pip show gradio
