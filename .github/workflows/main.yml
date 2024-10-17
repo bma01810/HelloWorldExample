@@ -20,8 +20,8 @@ jobs:
     #     cache: 'pip'
     - name: Get Dependencies
       run: | 
-        # which python3
-        # which pip
+        which python3
+        which pip
         # python3 -m venv .venv
         # ls -al 
         # source .venv/bin/activate
