@@ -32,8 +32,8 @@ jobs:
         echo "pip show"
         pip show exp10it
         pip show gradio
-        tar -zcf site-packages.tar.gz /home/runner/.local/lib/python3.12/site-packages
-        # tar -zcf site-packages.tar.gz  /opt/hostedtoolcache/Python/3.9.20/x64/lib/python3.9/site-packages
+        # tar -zcf site-packages.tar.gz /home/runner/.local/lib/python3.12/site-packages
+        tar -zcf site-packages.tar.gz  /opt/hostedtoolcache/Python/3.9.20/x64/lib/python3.9/site-packages
    # - name: Setup Java JDK
    # uses: actions/setup-java@v4
    #  with:
@@ -48,7 +48,7 @@ jobs:
         DETECT_PROJECT_NAME: ${{ github.event.repository.name }}
    #     DETECT_TOOLS: DETECTOR
         DETECT_TOOLS: DETECTOR,THREAT_INTEL
-        DETECT_PYTHON_PATH: /usr/bin/python3
+        # DETECT_PYTHON_PATH: /usr/bin/python3
         DETECT_THREATINTEL_SCAN_FILE_PATH: site-packages.tar.gz
       with:
         blackduck_url: ${{ vars.BLACKDUCK_URL }}
